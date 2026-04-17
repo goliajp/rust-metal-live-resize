@@ -15,3 +15,12 @@ publish = false
 
 [target.'cfg(target_os = "macos")'.dependencies]
 objc2 = "0.6"
+
+[target.'cfg(target_os = "macos")'.dev-dependencies]
+winit = "0.30"
+raw-window-handle = "0.6"
+objc2-quartz-core = { version = "0.3", features = ["CAMetalLayer", "CALayer"] }
+
+[[example]]
+name = "resize_demo"
+required-features = []
