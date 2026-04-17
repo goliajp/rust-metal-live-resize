@@ -1,0 +1,16 @@
+[package]
+name = "metal-live-resize"
+version = "0.1.0"
+description = "Glitch-free macOS Metal window live resize via CAMetalLayer contentsGravity + contentsScale"
+keywords = ["macos", "metal", "window", "resize", "cametallayer"]
+categories = ["graphics", "gui", "os::macos-apis"]
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+authors.workspace = true
+documentation = "https://docs.rs/metal-live-resize"
+publish = false
+
+[dependencies]
