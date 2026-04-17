@@ -13,4 +13,5 @@ authors.workspace = true
 documentation = "https://docs.rs/metal-live-resize"
 publish = false
 
-[dependencies]
+[target.'cfg(target_os = "macos")'.dependencies]
+objc2 = "0.6"
