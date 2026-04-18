@@ -1,5 +1,13 @@
 # metal-live-resize
 
+[![Crates.io](https://img.shields.io/crates/v/metal-live-resize?style=flat-square&logo=rust)](https://crates.io/crates/metal-live-resize)
+[![docs.rs](https://img.shields.io/docsrs/metal-live-resize?style=flat-square&logo=docs.rs)](https://docs.rs/metal-live-resize)
+[![License](https://img.shields.io/crates/l/metal-live-resize?style=flat-square)](LICENSE)
+[![MSRV](https://img.shields.io/badge/MSRV-1.94-blue?style=flat-square&logo=rust)](Cargo.toml)
+[![Downloads](https://img.shields.io/crates/d/metal-live-resize?style=flat-square)](https://crates.io/crates/metal-live-resize)
+
+**English** | [简体中文](README.zh-CN.md) | [日本語](README.ja.md)
+
 Glitch-free macOS `CAMetalLayer` window live resize — ~30 lines of `objc2`
 calls packaging a fix that every Metal-based macOS Rust app rediscovers.
 
