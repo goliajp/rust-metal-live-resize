@@ -6,6 +6,11 @@ calls packaging a fix that every Metal-based macOS Rust app rediscovers.
 **Platform:** macOS only. The crate is empty on other platforms and will
 not cause build failures in cross-platform workspaces.
 
+> **Also known as / if you're searching for:** macOS Metal resize
+> flicker, CAMetalLayer wobble, glitchless Metal window resize, live
+> resize stretch/distortion, `kCAGravityTopLeft` Metal fix, Retina
+> `backingScaleFactor` mismatch during resize.
+
 ## The problem
 
 During live window resize on macOS, the compositor lags behind the app's
@@ -74,4 +79,4 @@ Production reference implementation:
 
 ## License
 
-MIT — see [LICENSE](../../LICENSE) at the workspace root.
+MIT — see [LICENSE](LICENSE).
