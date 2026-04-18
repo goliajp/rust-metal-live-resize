@@ -63,7 +63,7 @@
 #![cfg(target_os = "macos")]
 #![deny(missing_docs)]
 
-use core::ffi::{c_void, CStr};
+use core::ffi::{CStr, c_void};
 use objc2::runtime::AnyObject;
 use objc2::{class, msg_send};
 
