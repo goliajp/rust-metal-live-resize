@@ -45,19 +45,20 @@
 //!
 //! # Example
 //!
-//! ```no_run
+//! ```ignore
+//! // macOS-only; the crate exposes no items on other platforms.
 //! use metal_live_resize::configure_for_live_resize;
 //! use core::ffi::c_void;
 //!
-//! # unsafe fn example(layer: *mut c_void, view: *mut c_void) {
-//! // after attaching your CAMetalLayer to an NSView:
-//! unsafe { configure_for_live_resize(layer, view) };
+//! unsafe fn example(layer: *mut c_void, view: *mut c_void) {
+//!     // after attaching your CAMetalLayer to an NSView:
+//!     unsafe { configure_for_live_resize(layer, view) };
 //!
-//! // per-frame, read the actual drawable size rather than cached w/h:
-//! if let Some((w, h)) = unsafe { metal_live_resize::drawable_texture_size(layer) } {
-//!     // render at (w, h)
+//!     // per-frame, read the actual drawable size rather than cached w/h:
+//!     if let Some((w, h)) = unsafe { metal_live_resize::drawable_texture_size(layer) } {
+//!         let _ = (w, h); // render at (w, h)
+//!     }
 //! }
-//! # }
 //! ```
 
 #![cfg(target_os = "macos")]
