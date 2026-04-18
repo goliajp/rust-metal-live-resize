@@ -47,8 +47,10 @@ struct CgSize {
 
 // SAFETY: matches Objective-C's CGSize layout.
 unsafe impl Encode for CgSize {
-    const ENCODING: Encoding =
-        Encoding::Struct("CGSize", &[<f64 as Encode>::ENCODING, <f64 as Encode>::ENCODING]);
+    const ENCODING: Encoding = Encoding::Struct(
+        "CGSize",
+        &[<f64 as Encode>::ENCODING, <f64 as Encode>::ENCODING],
+    );
 }
 
 #[repr(C)]
@@ -107,7 +109,7 @@ impl ApplicationHandler for App {
         let RawWindowHandle::AppKit(appkit) = handle else {
             panic!("macOS only");
         };
-        let ns_view = appkit.ns_view.as_ptr() as *mut c_void;
+        let ns_view = appkit.ns_view.as_ptr();
 
         // Set up Metal device, queue, layer.
         let (layer, queue) = unsafe { setup_metal(ns_view) };
