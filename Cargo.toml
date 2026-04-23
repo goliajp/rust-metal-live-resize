@@ -1,15 +1,15 @@
 [package]
 name = "metal-live-resize"
-version = "0.1.0"
+version = "0.1.1"
 description = "Glitch-free macOS Metal window live resize via CAMetalLayer contentsGravity + contentsScale"
 keywords = ["macos", "metal", "window", "resize", "cametallayer"]
 categories = ["graphics", "gui", "os::macos-apis"]
-edition.workspace = true
-rust-version.workspace = true
-license.workspace = true
-repository.workspace = true
-homepage.workspace = true
-authors.workspace = true
+edition = "2024"
+rust-version = "1.94"
+license = "MIT"
+repository = "https://github.com/goliajp/rust-metal-live-resize"
+homepage = "https://github.com/goliajp/rust-metal-live-resize"
+authors = ["GOLIA株式会社", "Li Hao <lihao@golia.jp>"]
 readme = "README.md"
 documentation = "https://docs.rs/metal-live-resize"
 
@@ -28,3 +28,7 @@ objc2-quartz-core = { version = "0.3", features = ["CAMetalLayer", "CALayer"] }
 [[example]]
 name = "resize_demo"
 required-features = []
+
+[profile.release]
+lto = true
+codegen-units = 1
