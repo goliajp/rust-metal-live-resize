@@ -1,6 +1,6 @@
 [package]
 name = "metal-live-resize"
-version = "0.1.1"
+version = "0.1.2"
 description = "Glitch-free macOS Metal window live resize via CAMetalLayer contentsGravity + contentsScale"
 keywords = ["macos", "metal", "window", "resize", "cametallayer"]
 categories = ["graphics", "gui", "os::macos-apis"]
