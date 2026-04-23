@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-04-24
+
+### Changed
+- Smoke-test release via the new repo's GitHub Actions publish workflow.
+  No code changes.
+
 ## [0.1.1] - 2026-04-24
 
 ### Changed
