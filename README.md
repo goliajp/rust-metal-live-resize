@@ -85,7 +85,7 @@ Pattern first documented by Tristan Hume, 2019:
 Production reference implementation:
 [`goliajp/tora`](https://github.com/goliajp/tora) — `crates/tora-gpu/src/surface.rs`.
 
-<!-- ECOSYSTEM BEGIN (synced by claws/opensource/scripts/sync-ecosystem.py — edit ecosystem.toml, not this block) -->
+<!-- ECOSYSTEM BEGIN (generated — edit ecosystem.toml, not this block) -->
 
 ## Ecosystem
 
