@@ -67,6 +67,20 @@ metal-live-resize = "0.1"
 
 生产参考实现：[`goliajp/tora`](https://github.com/goliajp/tora) —— `crates/tora-gpu/src/surface.rs`。
 
+<!-- ECOSYSTEM BEGIN (synced by claws/opensource/scripts/sync-ecosystem.py — edit ecosystem.toml, not this block) -->
+
+## 生态系统
+
+GOLIA Rust GUI/GPU 基础设施系列的一部分 —— 每个 crate 抽自真实生产事故，独立版本发布：
+
+| Crate / Package | 仓库 | 说明 |
+|---|---|---|
+| **metal-live-resize**（本 crate） | [rust-metal-live-resize](https://github.com/goliajp/rust-metal-live-resize) | macOS Metal 窗口无抖动实时缩放（CAMetalLayer contentsGravity + contentsScale） |
+| [coalesce-worker](https://crates.io/crates/coalesce-worker) | [rust-coalesce-worker](https://github.com/goliajp/rust-coalesce-worker) | 合并式 worker 线程 + 代际计数器丢弃过时结果 |
+| [damage-rects](https://crates.io/crates/damage-rects) | [rust-damage-rects](https://github.com/goliajp/rust-damage-rects) | 累积、合并并输出脏矩形用于部分 GPU 重绘 |
+
+<!-- ECOSYSTEM END -->
+
 ## 许可证
 
 MIT —— 见 [LICENSE](LICENSE)。

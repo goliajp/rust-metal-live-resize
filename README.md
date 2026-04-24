@@ -85,6 +85,20 @@ Pattern first documented by Tristan Hume, 2019:
 Production reference implementation:
 [`goliajp/tora`](https://github.com/goliajp/tora) — `crates/tora-gpu/src/surface.rs`.
 
+<!-- ECOSYSTEM BEGIN (synced by claws/opensource/scripts/sync-ecosystem.py — edit ecosystem.toml, not this block) -->
+
+## Ecosystem
+
+Part of GOLIA's Rust GUI/GPU infrastructure family — narrow crates extracted from real production incidents, each independently versioned:
+
+| Crate / Package | Repo | Description |
+|---|---|---|
+| **metal-live-resize** (this crate) | [rust-metal-live-resize](https://github.com/goliajp/rust-metal-live-resize) | Glitch-free macOS Metal window live resize (CAMetalLayer contentsGravity + contentsScale) |
+| [coalesce-worker](https://crates.io/crates/coalesce-worker) | [rust-coalesce-worker](https://github.com/goliajp/rust-coalesce-worker) | Coalescing worker thread + generation-counter stale-result rejection |
+| [damage-rects](https://crates.io/crates/damage-rects) | [rust-damage-rects](https://github.com/goliajp/rust-damage-rects) | Accumulate, coalesce, and emit dirty rectangles for partial GPU redraw |
+
+<!-- ECOSYSTEM END -->
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
