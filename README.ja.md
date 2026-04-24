@@ -67,7 +67,7 @@ metal-live-resize = "0.1"
 
 プロダクション実装: [`goliajp/tora`](https://github.com/goliajp/tora) —— `crates/tora-gpu/src/surface.rs`。
 
-<!-- ECOSYSTEM BEGIN (synced by claws/opensource/scripts/sync-ecosystem.py — edit ecosystem.toml, not this block) -->
+<!-- ECOSYSTEM BEGIN (generated — edit ecosystem.toml, not this block) -->
 
 ## エコシステム
 
